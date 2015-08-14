@@ -1,0 +1,28 @@
+﻿Build started 13/08/2015 22:14:27.
+     1>Project "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\Tutorial01_2012.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Kieron\Desktop\Creative Tech Prototype\Tutorial01\DirectXTK\Inc" /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  Game.cpp
+         Game.cpp
+         c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\matricesconstbuffer.h(21): warning C4324: 'PerFrameVariables' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\matricesconstbuffer.h(27): warning C4324: 'ParticleCount' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\matricesconstbuffer.h(33): warning C4324: 'DeadListCount' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\game.cpp(23): warning C4316: 'GPUParticleSystem' : object allocated on the heap may not be aligned 16
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\game.cpp(167): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(528) : see declaration of 'mbstowcs'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Debug\Creative Tech Project.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Debug\Creative Tech Project.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Debug\Creative Tech Project.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
+         Debug\FPS.obj
+         Debug\Game.obj
+         Debug\GPUParticleSystem.obj
+         Debug\input.obj
+         Debug\ShaderFactory.obj
+         Debug\Tutorial01.obj
+         "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\DirectXTK\Bin\Desktop_2012\Win32\Debug\DirectXTK.lib"
+     1>FPS.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Tutorial01_2012.vcxproj -> C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Debug\Creative Tech Project.exe
+     1>Done Building Project "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\Tutorial01_2012.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.69

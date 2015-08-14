@@ -1,0 +1,59 @@
+﻿Build started 13/08/2015 22:15:12.
+     1>Project "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\Tutorial01_2012.vcxproj" on node 2 (Rebuild target(s)).
+     1>FxCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\fxc.exe /nologo /E"VS" /T vs_5_0 /Fo "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\VertexShader.cso" VertexShader.hlsl 
+         compilation object save succeeded; see C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\VertexShader.cso
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\fxc.exe /nologo /E"main" /T cs_5_0 /Fo "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\EmitParticles.cso" EmitParticles.hlsl 
+     1>C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\EmitParticles.hlsl(72,28-53): warning X3203: signed/unsigned mismatch, unsigned assumed
+     1>C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\EmitParticles.hlsl(84,9-71): warning X3206: implicit truncation of vector type
+         
+         compilation object save succeeded; see C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\EmitParticles.cso
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Kieron\Desktop\Creative Tech Prototype\Tutorial01\DirectXTK\Inc" /Zi /nologo /W4 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  FPS.cpp Game.cpp GPUParticleSystem.cpp input.cpp ShaderFactory.cpp Tutorial01.cpp
+         FPS.cpp
+     1>FPS.cpp(14): warning C4100: 'other' : unreferenced formal parameter
+         Game.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(21): warning C4324: 'PerFrameVariables' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(27): warning C4324: 'ParticleCount' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(33): warning C4324: 'DeadListCount' : structure was padded due to __declspec(align())
+     1>Game.cpp(23): warning C4316: 'GPUParticleSystem' : object allocated on the heap may not be aligned 16
+     1>Game.cpp(167): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(528) : see declaration of 'mbstowcs'
+         GPUParticleSystem.cpp
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(21): warning C4324: 'PerFrameVariables' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(27): warning C4324: 'ParticleCount' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(33): warning C4324: 'DeadListCount' : structure was padded due to __declspec(align())
+     1>GPUParticleSystem.cpp(593): warning C4018: '<' : signed/unsigned mismatch
+     1>GPUParticleSystem.cpp(570): warning C4100: 'dt' : unreferenced formal parameter
+     1>GPUParticleSystem.cpp(713): warning C4100: 'device' : unreferenced formal parameter
+         input.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         ShaderFactory.cpp
+     1>ShaderFactory.cpp(105): warning C4018: '<' : signed/unsigned mismatch
+     1>ShaderFactory.cpp(112): warning C4018: '<' : signed/unsigned mismatch
+         Tutorial01.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(21): warning C4324: 'PerFrameVariables' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(27): warning C4324: 'ParticleCount' : structure was padded due to __declspec(align())
+     1>c:\users\kieron\desktop\ctp_kieronh\creative tech project\tutorial01\MatricesConstBuffer.h(33): warning C4324: 'DeadListCount' : structure was padded due to __declspec(align())
+     1>Tutorial01.cpp(72): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\Tutorial01.res" Tutorial01.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\Creative Tech Project.exe" /INCREMENTAL:NO /NOLOGO d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\Creative Tech Project.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\Creative Tech Project.lib" /MACHINE:X86 /SAFESEH  Release\Tutorial01.res
+         Release\FPS.obj
+         Release\Game.obj
+         Release\GPUParticleSystem.obj
+         Release\input.obj
+         Release\ShaderFactory.obj
+         Release\Tutorial01.obj
+         "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\DirectXTK\Bin\Desktop_2012\Win32\Release\DirectXTK.lib"
+         Generating code
+         Finished generating code
+         Tutorial01_2012.vcxproj -> C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Release\Creative Tech Project.exe
+     1>Done Building Project "C:\Users\Kieron\Desktop\CTP_KieronH\Creative Tech Project\Tutorial01\Tutorial01_2012.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.12

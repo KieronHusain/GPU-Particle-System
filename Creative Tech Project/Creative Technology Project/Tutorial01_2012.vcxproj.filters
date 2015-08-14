@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{6c37ff46-7606-4987-845a-3c01712ed635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{b850efe5-5e2a-4ac5-b000-e8b9d55d96fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU Particle System">
+      <UniqueIdentifier>{b5df8171-a78d-429f-9674-df540373f80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU Particle System\Shaders">
+      <UniqueIdentifier>{a94859cb-c800-4f91-92a8-6c8123993ee7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tutorial01.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GPUParticleSystem.cpp">
+      <Filter>GPU Particle System</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderFactory.cpp">
+      <Filter>GPU Particle System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="constbuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUParticleSystem.h">
+      <Filter>GPU Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitterSettings.h">
+      <Filter>GPU Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="MatricesConstBuffer.h">
+      <Filter>GPU Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderFactory.h">
+      <Filter>GPU Particle System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tutorial01.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InitialiseDeadList.hlsl">
+      <Filter>GPU Particle System\Shaders</Filter>
+    </None>
+    <None Include="UpdateParticles.hlsl">
+      <Filter>GPU Particle System\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>GPU Particle System\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="EmitParticles.hlsl">
+      <Filter>GPU Particle System\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
